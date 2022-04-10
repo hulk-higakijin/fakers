@@ -19,9 +19,14 @@ RSpec.describe "home/index", type: :view do
       expect(page).to have_content 'Log in'
     end
 
-    # it 'Sign upページに遷移' do
-    #   click_on 'Sign up'
+    it 'Loginページに遷移' do
+      click_on 'Log in'
+      expect(page).to have_content 'fackersにログイン'
+    end
 
-    # end
+    it 'Sign upページに遷移' do
+      click_on 'Sign up'
+      expect(page).to have_content 'アカウントを作成'
+    end
   end
 end

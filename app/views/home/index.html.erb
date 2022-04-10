@@ -27,6 +27,10 @@
           <div>
             <%= link_to 'Log in', new_user_session_path, class: "lg:w-3/5 w-full flex justify-center border-blue-600 bg-transparent text-gray-100 p-4 border rounded-full tracking-wide font-semibold  focus:outline-none focus:shadow-outline hover:bg-gray-900 shadow-lg cursor-pointer transition ease-in duration-300" %>
           </div>
+          <% if user_signed_in? %>
+            <p class="text-white"><%= current_user.name %>はログインしている</p>
+            <%= link_to "サインアウト", destroy_user_session_path, method: :delete, class: 'text-white' %>
+          <% end %>
         </div>
       </div>
     </div>
