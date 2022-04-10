@@ -8,7 +8,7 @@ RSpec.describe "home/index", type: :view do
     end
 
     it '見出しが表示' do
-      expect(page).to have_content 'Come on, liars'
+      expect(page).to have_content 'Come on, fakers'
     end
 
     it 'Sign upボタンが表示' do
