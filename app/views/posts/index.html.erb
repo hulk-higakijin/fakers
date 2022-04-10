@@ -1,6 +1,6 @@
-<div class="grid grid-cols-1 lg:grid-cols-9 mx-auto" style="max-width: 1200px;">
-  <header class="col-span-2 h-screen border-gray-600 hidden lg:inline-block "> <%= render 'header' %> </header>
-  <main class="col-span-5 h-screen border-r border-l border-gray-600 overflow-scroll">
+<div class="grid grid-cols-1 lg:grid-cols-4 mx-auto" style="max-width: 1200px;">
+  <header class="col-span-1 h-screen border-gray-600 hidden lg:inline-block "> <%= render 'header' %> </header>
+  <main class="col-span-2 h-screen border-r border-l border-gray-600 overflow-scroll">
     <% 10.times.each do |post| %>
       <article class="hover:bg-gray-800 transition duration-350 ease-in-out">
         <div class="flex flex-shrink-0 p-4 pb-0">
@@ -81,5 +81,5 @@
       </article>
     <% end %>
   </main>
-  <aside class="col-span-2 h-screen position-relative hidden lg:inline-block"> <%= render 'aside' %> </aside>
+  <aside class="col-span-1 h-screen position-relative hidden lg:inline-block"> <%= render 'aside' %> </aside>
 </div>

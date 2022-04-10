@@ -34,6 +34,7 @@ class DeviseCreateUsers < ActiveRecord::Migration[7.0]
 
       t.string :name
       t.text :introduction
+      t.string :public_uid, unque: true 
 
       t.timestamps null: false
     end
