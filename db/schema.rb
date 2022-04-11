@@ -17,9 +17,9 @@ ActiveRecord::Schema[7.0].define(version: 2022_04_10_072027) do
   create_table "posts", force: :cascade do |t|
     t.text "content"
     t.bigint "user_id", null: false
-    t.integer "post_likes_count"
-    t.integer "reposts_count"
-    t.integer "comments_count"
+    t.integer "post_likes_count", default: 0
+    t.integer "reposts_count", default: 0
+    t.integer "comments_count", default: 0
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["user_id"], name: "index_posts_on_user_id"
